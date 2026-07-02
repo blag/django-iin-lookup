@@ -1,0 +1,40 @@
+[build-system]
+requires = ["uv_build>=0.11.8,<0.12.0"]
+build-backend = "uv_build"
+
+[project]
+name = "django-iin-lookup"
+version = "0.1.0"
+description = "An implementation of case-insensitive IN lookup for Django queries"
+authors = [
+    { name = "blag", email = "blag@users.noreply.github.com" }
+]
+license = "BSD-3-Clause"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.1",
+    "Framework :: Django :: 5.2",
+    "Framework :: Django :: 6.0",
+    "Framework :: Django :: 6.1",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django>=4.2",
+]
+
+[project.urls]
+Repository = "https://github.com/blag/django-iin-lookup"
+Issues = "https://github.com/blag/django-iin-lookup/issues"
+
+[tool.uv.build-backend]
+module-name = "iin"

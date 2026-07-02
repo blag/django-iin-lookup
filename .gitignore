@@ -1,0 +1,15 @@
+.sublime-project
+.sublime-workspace
+*.egg-info
+*.pyc
+.*cache
+.envrc
+.coverage
+.python-version
+uv.lock
+.idea/
+.tox/
+build/
+dist/
+htmlcov/
+venv/
